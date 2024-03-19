@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cocteles</title>
+    <link href="asincronico.css" rel="stylesheet">
+    <script src="asincronico.js" defer></script>
+</head>
+<body>
+<header> 
+    <h1>Cocteles</h1>
+    <button onclick="CoctelAlAzar()">Coctel al azar</button>
+
+</header>
+
+<div class="container" >
+
+    <section id="coctelInfo">
+        <p><strong>Id:</strong> <span id="coctelId"></span></p>
+        <p><strong>Nombre:</strong> <span id="coctelNombre"></span></p>
+        <p><strong>Categoría:</strong> <span id="coctelCategoria"></span></p>
+        <p><strong>Ingredientes:</strong> <ul id="coctelIngredientes"></ul></p>
+        <p><strong>Instrucciones:</strong> <span id="coctelInstrucciones"></span></p>
+        
+        <div id="loader" class="loader"></div>
+
+    </section>
+
+    <section>
+        <img src="" alt="" id="coctelImagen">
+        <button onclick="guardarFavorito()" id="guardarBtn">Guardar como favorito</button>
+    </section>
+
+    <aside>
+        <h2>Favoritos</h2>
+        <ul id="listaFavoritos"></ul>
+        <button onclick="guardarTodo()">Guarda tus favoritos</button>
+        <button onclick="eliminarFavoritos()">Eliminar Favoritos</button>
+        <button onclick="mostrarFavoritos()">Mostrar Favoritos</button>
+
+    </aside>
+
+    <div id="loader" class="loader"></div>
+
+</div>
+</body>
+</html>
